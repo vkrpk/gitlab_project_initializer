@@ -10,8 +10,6 @@ NEW_PROJECT_ID =
 gl = gitlab.Gitlab(GITLAB_API_URL, private_token=PRIVATE_TOKEN)
 # gl = gitlab.Gitlab(GITLAB_API_URL, private_token=PRIVATE_TOKEN, ssl_verify=False)
 
-gl = gitlab.Gitlab(GITLAB_API_URL, private_token=PRIVATE_TOKEN, ssl_verify=False)
-
 gl.auth()
 
 user = gl.user
